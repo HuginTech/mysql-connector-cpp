@@ -226,13 +226,13 @@ function(find_openssl)
 
 
   find_library(OPENSSL_LIBRARY
-    NAMES ssl ssleay32 ssleay32MD
+    NAMES libssl ssleay32 ssleay32MD
     PATH_SUFFIXES lib
     ${hints}
   )
 
   find_library(CRYPTO_LIBRARY
-    NAMES crypto libeay32 libeay32MD
+    NAMES libcrypto libeay32 libeay32MD
     PATH_SUFFIXES lib
     ${hints}
   )

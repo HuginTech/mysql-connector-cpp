@@ -46,8 +46,8 @@
 #ifdef _WIN32
 #pragma comment(lib,"ws2_32")
 #if defined(WITH_SSL) && !defined(WITH_SSL_WOLFSSL)
-  #pragma comment(lib,"ssleay32")
-  #pragma comment(lib,"libeay32")
+  #pragma comment(lib,"libssl")
+  #pragma comment(lib,"libcrypto")
 #endif
 #endif
 
